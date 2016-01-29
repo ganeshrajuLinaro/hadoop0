@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="nutch-conf.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<nutch-conf>
+  <property>
+    <name>fs.default.name</name>
+    <value>localhost:8020</value>
+  </property>
+
+  <property>
+    <name>ndfs.name.dir</name>
+    <value>/home/hadoop/var/ndfs/name</value>
+  </property>
+
+  <property>
+    <name>ndfs.data.dir</name>
+    <value>/home/hadoop/var/ndfs/data</value>
+  </property>
+
+  <property>
+    <name>ndfs.replication</name>
+    <value>1</value>
+  </property>
+
+  <property>
+    <name>mapred.job.tracker</name>
+    <value>localhost:8012</value>
+  </property>
+
+  <property>
+    <name>mapred.system.dir</name>
+    <value>/home/hadoop/var/mapred/system</value>
+  </property>
+
+  <property>
+    <name>mapred.local.dir</name>
+    <value>/home/hadoop/var/mapred/local</value>
+  </property>
+</nutch-conf>

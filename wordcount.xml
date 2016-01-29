@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<nutch-conf>
+  <!-- Locate where the user code is -->
+  <property>
+    <name>mapred.jar</name>
+    <value>wordcount.jar</value>
+  </property>
+
+  <!-- Specify the input and output directories -->
+  <property>
+    <name>mapred.input.dir</name>
+    <value>wc-input</value>
+  </property>
+
+  <property>
+    <name>mapred.output.dir</name>
+    <value>wc-output</value>
+  </property>
+
+  <!-- Define the classes for the job-->
+  <property>
+    <name>mapred.mapper.class</name>
+    <value>org.apache.hadoop.examples.WordCount$MapClass</value>
+  </property>
+  <property>
+    <name>mapred.reducer.class</name>
+    <value>org.apache.hadoop.examples.WordCount$Reduce</value>
+  </property>
+  <property>
+    <name>mapred.output.key.class</name>
+    <value>org.apache.nutch.io.UTF8</value>
+  </property>
+  <property>
+    <name>mapred.output.value.class</name>
+    <value>org.apache.nutch.io.IntWritable</value>
+  </property>
+</nutch-conf>
